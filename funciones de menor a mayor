@@ -62,7 +62,7 @@ public class FuncionesArray {
         ordenarArray(numeros);
 
         // imprime el arreglo ya ordenado.
-        System.out.println("Array ordenado:");
+        System.out.println("nuneros ordenados:");
 
         // recorre el arreglo para imprimir cada número.
         for (int numero : numeros) {
