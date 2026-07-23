@@ -46,3 +46,27 @@ public class FuncionesArray {
         // ordena el arreglo automáticamente.
         Arrays.sort(array);
     }
+
+    public static void main(String[] args) {
+
+        // aquí se crea el arreglo con los números.
+        int[] numeros = {15, 8, 23, 4, 10, 19};
+
+        // muestra el número mayor.
+        System.out.println("Valor mayor: " + obtenerMayor(numeros));
+
+        // muestra el número menor.
+        System.out.println("Valor menor: " + obtenerMenor(numeros));
+
+        // ordena el arreglo.
+        ordenarArray(numeros);
+
+        // imprime el arreglo ya ordenado.
+        System.out.println("Array ordenado:");
+
+        // recorre el arreglo para imprimir cada número.
+        for (int numero : numeros) {
+            System.out.print(numero + " ");
+        }
+    }
+}
