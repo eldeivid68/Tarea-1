@@ -1,0 +1,72 @@
+import java.util.Arrays; // para ordenar el arreglo de forma automática.
+
+public class FuncionesArray {
+
+    // función para encontrar el número mayor del arreglo.
+    public static int obtenerMayor(int[] array) {
+
+        // el primer número se toma como referencia.
+        int mayor = array[0];
+
+        // recorre el arreglo comparando todos los números.
+        for (int i = 1; i < array.length; i++) {
+
+            // si encuentra un número más grande, lo guarda.
+            if (array[i] > mayor) {
+                mayor = array[i];
+            }
+        }
+
+        // devuelve el número mayor encontrado.
+        return mayor;
+    }
+
+    // función para encontrar el número menor del arreglo.
+    public static int obtenerMenor(int[] array) {
+
+        // el primer número se toma como referencia.
+        int menor = array[0];
+
+        // recorre el arreglo comparando todos los números.
+        for (int i = 1; i < array.length; i++) {
+
+            // si encuentra un número más pequeño, lo guarda.
+            if (array[i] < menor) {
+                menor = array[i];
+            }
+        }
+
+        // devuelve el número menor encontrado.
+        return menor;
+    }
+
+    // función para ordenar el arreglo de menor a mayor.
+    public static void ordenarArray(int[] array) {
+
+        // ordena el arreglo automáticamente.
+        Arrays.sort(array);
+    }
+
+    public static void main(String[] args) {
+
+        // aquí se crea el arreglo con los números.
+        int[] numeros = {15, 8, 23, 4, 10, 19};
+
+        // muestra el número mayor.
+        System.out.println("Valor mayor: " + obtenerMayor(numeros));
+
+        // muestra el número menor.
+        System.out.println("Valor menor: " + obtenerMenor(numeros));
+
+        // ordena el arreglo.
+        ordenarArray(numeros);
+
+        // imprime el arreglo ya ordenado.
+        System.out.println("números ordenado:");
+
+        // recorre el arreglo para imprimir cada número.
+        for (int numero : numeros) {
+            System.out.print(numero + " ");
+        }
+    }
+}
